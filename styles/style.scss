@@ -1,16 +1,219 @@
-
-
-:root{
-
-    --first : black;
-    --second : white;
-    --third : rgb(65, 62, 64);
+:root {
+  --first: black;
+  --second: white;
+  --third: #a3a3a3;
 }
 
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: General Sans;
+}
+
+html {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 15.8rem;
+  color: var(--third);
+  font-family: General Sans Medium;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 14rem;
+}
+
+h5 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+h6 {
+  font-size: 1.5rem;
+  word-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+p{
+    font-size: 1.5rem;
+}
+.effectbox {
+  width: fit-content;
+}
+.upeffectbox {
+  width: fit-content;
+}
+
+main {
+  width: 100%;
+  // width: 100vw;
+  // min-height: 100vh;
+  background-color: var(--first);
+  color: var(--second);
+  padding: 0 5rem;
+  // padding-right: 8rem;
+
+  nav {
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      ul {
+        // display: flex;
+        display: none;
+        justify-content: center;
+
+        align-items: center;
+
+        li {
+          padding: 0 3rem;
+          text-transform: uppercase;
+
+          a {
+            color: var(--second);
+            font-size: 1.7rem;
+            cursor: pointer;
+            position: relative;
+          }
+          a:after {
+            content: "";
+            width: 100%;
+            position: absolute;
+            bottom: -0.2rem;
+            left: 0%;
+            height: 0.1rem;
+            background-color: var(--second);
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.4s ease-in-out;
+          }
+        }
+        li:hover a:after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+
+      h5 {
+        font-size: 1.5rem;
+        position: relative;
+        cursor: pointer;
+      }
+      h5:after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        bottom: -0.2rem;
+        left: 0%;
+        height: 0.1rem;
+        background-color: var(--second);
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.4s ease-in-out;
+      }
+      h5:hover:after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+  }
+
+  header {
+    width: 100%;
+    min-height: 60vh;
+    margin-bottom: 18rem;
+
+    #headerfirst {
+      width: 100%;
+      min-height: 40rem;
+      padding: 9rem 0;
+      padding-left: 2rem;
+
+      .headerfirstbox {
+        width: 62vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        h6 {
+          margin: 1.5rem 0;
+          letter-spacing: 0.2rem;
+        }
+      }
+    }
+
+    #headersecond {
+      width: 100%;
+      min-height: 10vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      padding: 2rem 0;
+
+      .effectbox {
+        h6 {
+          position: relative;
+        }
+
+        h6:after {
+          content: "";
+          width: 100%;
+          position: absolute;
+          bottom: -0.3rem;
+          left: 0%;
+          height: 0.15rem;
+          background-color: var(--second);
+          transform: scaleX(0);
+          transform-origin: bottom right;
+          transition: transform 0.4s ease-in-out;
+        }
+        h6:hover:after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+      .upeffectbox{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        h6{
+            margin-bottom: 1rem;
+            
+        }
+      }
+    }
+  }
+
+
+  #page{
+    width: 100%;
+    min-height: 100vh;
+    margin: 8rem 0;
+
+    .box{
+        width: 91%;
+        height: 22rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 0.01rem solid var(--third);
+        border-bottom: 0.01rem solid var(--third);
+        padding: 0 2rem;
+        
+        h1{
+            font-size: 11.6rem;
+            letter-spacing: 0.4rem;
+            font-weight: lighter;
+        }
+        
+    }
+  }
+
+
 }

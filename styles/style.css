@@ -1,7 +1,7 @@
 :root {
   --first: black;
   --second: white;
-  --third: rgb(65, 62, 64);
+  --third: #a3a3a3;
 }
 
 * {
@@ -10,4 +10,187 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  font-family: General Sans;
+}
+
+html {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 15.8rem;
+  color: var(--third);
+  font-family: General Sans Medium;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 14rem;
+}
+
+h5 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-size: 1.5rem;
+  word-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.effectbox {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.upeffectbox {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+main {
+  width: 100%;
+  background-color: var(--first);
+  color: var(--second);
+  padding: 0 5rem;
+}
+main nav {
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main nav div ul {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+main nav div ul li {
+  padding: 0 3rem;
+  text-transform: uppercase;
+}
+main nav div ul li a {
+  color: var(--second);
+  font-size: 1.7rem;
+  cursor: pointer;
+  position: relative;
+}
+main nav div ul li a:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -0.2rem;
+  left: 0%;
+  height: 0.1rem;
+  background-color: var(--second);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-in-out;
+}
+main nav div ul li:hover a:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+main nav div h5 {
+  font-size: 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+main nav div h5:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -0.2rem;
+  left: 0%;
+  height: 0.1rem;
+  background-color: var(--second);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-in-out;
+}
+main nav div h5:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+main header {
+  width: 100%;
+  min-height: 60vh;
+  margin-bottom: 18rem;
+}
+main header #headerfirst {
+  width: 100%;
+  min-height: 40rem;
+  padding: 9rem 0;
+  padding-left: 2rem;
+}
+main header #headerfirst .headerfirstbox {
+  width: 62vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+main header #headerfirst .headerfirstbox h6 {
+  margin: 1.5rem 0;
+  letter-spacing: 0.2rem;
+}
+main header #headersecond {
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 2rem 0;
+}
+main header #headersecond .effectbox h6 {
+  position: relative;
+}
+main header #headersecond .effectbox h6:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -0.3rem;
+  left: 0%;
+  height: 0.15rem;
+  background-color: var(--second);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-in-out;
+}
+main header #headersecond .effectbox h6:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+main header #headersecond .upeffectbox {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+main header #headersecond .upeffectbox h6 {
+  margin-bottom: 1rem;
+}
+main #page {
+  width: 100%;
+  min-height: 100vh;
+  margin: 8rem 0;
+}
+main #page .box {
+  width: 91%;
+  height: 22rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.01rem solid var(--third);
+  border-bottom: 0.01rem solid var(--third);
+  padding: 0 2rem;
+}
+main #page .box h1 {
+  font-size: 11.6rem;
+  letter-spacing: 0.4rem;
+  font-weight: lighter;
 }/*# sourceMappingURL=style.css.map */
