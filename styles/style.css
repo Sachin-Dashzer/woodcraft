@@ -17,6 +17,7 @@ html {
   font-size: 10px;
   background-color: var(--first);
   color: var(--second);
+  width: 100vw;
 }
 
 h1 {
@@ -55,8 +56,17 @@ p {
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 
+@media (max-width: 600px) {
+  html {
+    font-size: 6px;
+    width: 100vw;
+  }
+  h1 {
+    font-size: 9rem;
+  }
+}
 nav {
-  width: 100%;
+  width: 100vw;
   height: 9rem;
   display: flex;
   justify-content: space-between;
@@ -124,7 +134,7 @@ nav div h5:hover:after {
 }
 
 main {
-  width: 100%;
+  width: 100vw;
   min-height: 310vh;
   background-color: var(--first);
   color: var(--second);
@@ -305,7 +315,7 @@ main footer p {
   text-transform: uppercase;
 }
 main footer .footerheader {
-  height: 5rem;
+  max-height: 5rem;
   width: -moz-fit-content;
   width: fit-content;
 }
