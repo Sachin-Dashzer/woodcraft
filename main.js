@@ -19,7 +19,6 @@ function frontanim() {
 
     tl.from("nav", {
 
-        y: '-10',
         opacity: 0,
         duration: 1.8,
         ease: Expo.easeInOut,
@@ -28,9 +27,9 @@ function frontanim() {
 
         .to(".effecte", {
             y: '0',
-            duration: 2,
+            duration: 1,
             delay: -1.8,
-            ease: Expo.easeInOut,
+            ease: Expo.ease,
             stagger: .2
         })
         .to(".effectd", {
